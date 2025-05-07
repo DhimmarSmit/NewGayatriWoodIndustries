@@ -217,6 +217,17 @@ section{
     color:black;
 }
 
+.product-details button{
+    background: #DE4B17;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border: none;
+    width:100%;
+}
+
 .service-content{
     display: flex;
     flex-wrap: wrap;
