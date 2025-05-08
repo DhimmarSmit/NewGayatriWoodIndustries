@@ -106,7 +106,6 @@ var tl = gsap.timeline();
 tl.to('#navbar',{
     right:0,
     duration:0.7,
-    ease:'power2.inOut',
 })
 
 tl.from('.mobile-nav ol li',{
@@ -114,7 +113,6 @@ tl.from('.mobile-nav ol li',{
     opacity:0,
     duration:0.5,
     stagger:0.1,
-    ease:'power2.inOut',
 })
 
 tl.from('.mobile-img, .social-logo, #close',{
