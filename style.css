@@ -121,7 +121,20 @@ nav ul li:not(:hover)::after {
     }
 }
 
-.logo img{
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.mataji-logo{
+    width:50px;
+}
+
+.new-gayatri-logo{
     width:200px;
     margin: 0px 20px;
 }
@@ -567,7 +580,7 @@ footer{
         padding: 5px 15px;
     }
 
-    .logo img {
+    .new-gayatri-logo {
         width: 180px;
     }
 
@@ -664,7 +677,7 @@ footer{
         cursor: pointer;
     }
     
-    .logo img {
+    .new-gayatri-logo{
         width: 180px;
         margin: 0px;
     }
@@ -914,10 +927,19 @@ footer{
         border-radius: 10px;
         object-fit: cover;
     }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        position: relative;
+    }
 }
 
 @media(max-width:360px){
-    .logo img {
+
+    .new-gayatri-logo {
         width: 150px;
     }
 
