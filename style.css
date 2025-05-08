@@ -954,6 +954,14 @@ footer{
         flex-direction: row;
         position: relative;
     }
+
+    .product-details span img{
+        position: absolute;
+        object-fit: cover;
+        transform: scale(0.8);
+        top:0px;
+        left:-10px;
+    }
 }
 
 @media(max-width:360px){
