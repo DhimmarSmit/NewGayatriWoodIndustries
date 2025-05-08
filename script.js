@@ -97,19 +97,37 @@ gsap.from('.contact-content',{
 })
 
 
-const navBar = document.getElementById('navbar');
+
 const bars = document.querySelector('#bars');
 const close = document.querySelector('#close');
 
-bars.addEventListener('click',() =>{
-    gsap.to(navBar,{
-        right:0,
-        duration:0.4,
-        stagger:0.5,
-        ease:'power2.inOut',
-    })
+var tl = gsap.timeline();
+
+tl.to('#navbar',{
+    right:0,
+    duration:0.7,
+    ease:'power2.inOut',
 })
 
-close.addEventListener('click',() =>{
-    navBar.style.right = '-100%';
+tl.from('.mobile-nav ol li',{
+    x:100,
+    opacity:0,
+    duration:0.5,
+    stagger:0.1,
+    ease:'power2.inOut',
 })
+
+tl.from('.mobile-img, .social-logo, #close',{
+    opacity:0,
+    duration:0.5,
+})
+
+tl.pause();
+
+bars.addEventListener('click',function(){
+    tl.play();
+});
+
+close.addEventListener('click',function(){
+    tl.reverse();
+});
