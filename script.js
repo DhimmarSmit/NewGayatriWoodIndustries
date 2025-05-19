@@ -129,3 +129,22 @@ bars.addEventListener('click',function(){
 close.addEventListener('click',function(){
     tl.reverse();
 });
+
+function whatsapp(){
+    var phonenumber = "+917573086008";
+  
+    var name = document.getElementById("name").value;
+    var phoneno = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var cname = document.getElementById("cname").value;
+    var query = document.getElementById("query").value;
+  
+    var url = "https://wa.me/" + phonenumber + '?text='
+    +"*Name :* " + name + "%0a"
+    +"*email :* " + email + "%0a"
+    +"*Phoneno. :* " + phoneno + "%0a"
+    +"*Company-name :* " + cname + "%0a"
+    +"*Query :* " + query + "%0a%0a"
+  
+    window.open(url, '_blank').focus();
+  }
