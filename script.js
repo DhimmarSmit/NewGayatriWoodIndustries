@@ -130,7 +130,7 @@ close.addEventListener('click',function(){
     tl.reverse();
 });
 
-function whatsapp(){
+function whatsappmsg(){
     var phonenumber = "+917573086008";
   
     var name = document.getElementById("name").value;

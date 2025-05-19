@@ -569,6 +569,7 @@ form input{
     padding:10px;
     border-radius: 10px;
     border: 1px solid #DE4B17;
+    outline-color: #268E13;
 }
 
 textarea{
@@ -576,6 +577,7 @@ textarea{
     border-radius: 10px;
     padding:10px;
     border: 1px solid #DE4B17;
+    outline-color: #268E13;
 }
 
 form button{
