@@ -537,6 +537,40 @@ footer{
    display: none;
 }
 
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top:40px;
+    text-align: left;
+}
+
+form label{
+    display: block;
+    text-align: left;
+    margin:15px 0;
+}
+
+form input{
+    width:500px;
+    padding:10px;
+    border-radius: 10px;
+    border: 1px solid #DE4B17;
+}
+
+textarea{
+    width:500px;
+    border-radius: 10px;
+    padding:10px;
+    border: 1px solid #DE4B17;
+}
+
 
 /* responsive part */
 
@@ -848,6 +882,34 @@ footer{
         justify-content: space-between;
         gap: 30px;
     }
+
+    form {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top:20px;
+        text-align: left;
+    }
+    
+    form label{
+        display: block;
+        text-align: left;
+        margin:15px 0;
+    }
+    
+    form input{
+        width:400px;
+        padding:10px;
+        border-radius: 10px;
+        border: 1px solid #DE4B17;
+    }
+    
+    textarea{
+        width:400px;
+        border-radius: 10px;
+        padding:10px;
+        border: 1px solid #DE4B17;
+    }
 }
 
 @media(max-width:500px){
@@ -964,6 +1026,34 @@ footer{
         transform: scale(0.8);
         top:0px;
         left:-10px;
+    }
+
+    form {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top:15px;
+        text-align: left;
+    }
+    
+    form label{
+        display: block;
+        text-align: left;
+        margin:15px 0;
+    }
+    
+    form input{
+        width:300px;
+        padding:10px;
+        border-radius: 10px;
+        border: 1px solid #DE4B17;
+    }
+    
+    textarea{
+        width:300px;
+        border-radius: 10px;
+        padding:10px;
+        border: 1px solid #DE4B17;
     }
 }
 
